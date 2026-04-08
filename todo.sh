@@ -77,7 +77,7 @@ case "$COMMAND" in
     
     clear)
         # Clear all
-        > "$TASKS_FILE"
+        true > "$TASKS_FILE"
         echo -e "\033[0;32m All tasks cleared \033[0m"
         ;;
     
