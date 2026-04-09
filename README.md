@@ -54,11 +54,11 @@ Add tasks, List tasks, Delete tasks, Clear all tasks, Validate user input and di
 
 ## 📷 Example Usage
 
-![Add task](https://raw.githubusercontent.com/mike2377/bash-todo-cli/main/assets/images/add.png)
+![Add task](assets/images/add.png)
 
-![List tasks](https://raw.githubusercontent.com/mike2377/bash-todo-cli/main/assets/images/list.png)
+![List tasks](assets/images/list.png)
 
-![Delete task](https://raw.githubusercontent.com/mike2377/bash-todo-cli/main/assets/images/delete.png)
+![Delete task](assets/images/delete.png)
 
 ## Clone the repository
 
