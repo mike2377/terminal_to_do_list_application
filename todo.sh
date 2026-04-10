@@ -30,9 +30,14 @@ case "$COMMAND" in
             echo -e "\033[0;33m Example: ./todo.sh add \"Buy milk\" \033[0m"
             exit 1
         fi
-        # Appends the task text to a file named tasks.txt
-        echo "$2" >> "$TASKS_FILE"
-        echo -e "\033[0;33m Task add:\033[0m \033[0;32m  $2 \033[0m"
+
+        if grep -iq "$2" "$TASKS_FILE" 2 >/dev/null; then
+            echo -e "\033[0;33m This Task already exist\033[0m"
+        else
+            # Appends the task text to a file named tasks.txt
+            echo "$2" >> "$TASKS_FILE"
+            echo -e "\033[0;33m Task add:\033[0m \033[0;32m  $2 \033[0m"
+        fi
         ;;
     
     list)
